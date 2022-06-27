@@ -1,34 +1,99 @@
-let singers = ["Avicii", "DavidGueta", "Hillsong", "Justin", "Marshmello"]
+// ------------------------------- Atividade 6 ----------------------------------- //
 
-console.log(singers[1])
+// let singers = ["Avicii", "DavidGueta", "Hillsong", "Justin", "Marshmello"]
 
-singers.unshift("AnaVitoria");
-console.log(singers)
+// console.log(singers[1])
 
-let places = ["Rio de janeiro", "São Paulo", "Bahia", "Rio Grande do Sul", "Minas"]
+// singers.unshift("AnaVitoria");
+// console.log(singers)
 
-places.pop()
-console.log(places)
+// let places = ["Rio de janeiro", "São Paulo", "Bahia", "Rio Grande do Sul", "Minas"]
 
-let color = ["red" , "blue" , "white" , "black" , "green" , "yellow"]
+// places.pop()
+// console.log(places)
 
-color.splice(1,4)
-console.log(color)
+// let color = ["red" , "blue" , "white" , "black" , "green" , "yellow"]
 
-let names = ["Andre" , "Leo" , "Livia" , "Paulo" , "Carla"]
+// color.splice(1,4)
+// console.log(color)
 
-names.splice(4,0, "Theo","Laura")
-console.log(names)
+// let names = ["Andre" , "Leo" , "Livia" , "Paulo" , "Carla"]
 
-let number = [26 , 27 , 28 , 29 ,30]
+// names.splice(4,0, "Theo","Laura")
+// console.log(names)
 
-number.shift()
-console.log(number)
+// let number = [26 , 27 , 28 , 29 ,30]
 
-let numbers = [7,5,6,3,8,9,2,1,4]
+// number.shift()
+// console.log(number)
 
-numbers.sort(function(a , b){
-    return(a-b)
-})
+// let numbers = [7,5,6,3,8,9,2,1,4]
 
-console.log(numbers)
+// numbers.sort(function(a , b){
+//     return(a-b)
+// })
+
+// console.log(numbers)
+
+// ------------------------ Atividade 6 ------------------------------------ //
+
+let me = 
+{
+    Nome: "Leonardo",
+    idade: 26,
+    cidade: "Rio de janeiro"
+}
+
+
+me.musica = "This is my life"
+console.log(me)
+
+let animes = {
+    Anime: "boku no hero",
+    Anime2: "Jujutsu Kaisen",
+    Anime3: "One piece"
+}
+
+delete animes.Anime
+console.log(animes)
+
+console.log(animes)
+
+let cadastro = [
+    {
+        nome:"Livia",
+        idade: 26,
+        telefone:21993067698,
+        amigos: ["Isabel","Ricardo", "Paula", "Manuela"] 
+    },
+    {
+        nome:"Leonardo",
+        idade: 26,
+        telefone:21993067698,
+        amigos: ["Cleto","Ricardo", "Yuri", "Manuella"] 
+    },
+    {
+        nome:"Rita",
+        idade: 26,
+        telefone:21993067698,
+        amigos: ["David","Paulo", "Paula", "Joana"] 
+    },
+    {
+        nome:"Juliana",
+        idade: 23,
+        telefone:21923067698,
+        amigos: ["João","Manuela", "Roberta", "Myllena"] 
+    },
+    {
+        nome:"Felipe",
+        idade: 31,
+        telefone:21944067698,
+        amigos: ["Isabel","Ricardo", "Paula", "Manu"] 
+    }
+];
+
+
+for(let contador = 0; contador <= cadastro.length; contador++)
+{
+    console.log(cadastro[contador].amigos[contador])
+}
